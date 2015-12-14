@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <raj.bullncow.util.FloatLabeledEditText
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="50sp"
+        android:layout_marginRight="50sp">
+
+        <EditText
+            android:id="@+id/guess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="enter your guess"
+            android:inputType="number" />
+    </raj.bullncow.util.FloatLabeledEditText>
+
+    <raj.bullncow.util.FlatButton
+        android:id="@+id/guess_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="50dp"
+        android:text="Check" />
+
+    <raj.bullncow.util.CTextView
+        android:id="@+id/no_of_guess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="15dp"
+        android:text="0"
+        android:textSize="20sp"
+        app:typeface="bold" />
+
+    <raj.bullncow.util.CTextView
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="15dp"
+        android:layout_toLeftOf="@+id/no_of_guess"
+        android:layout_toStartOf="@+id/no_of_guess"
+        android:text="Turn"
+        android:textSize="20sp"
+        app:typeface="italic" />
+
+    <raj.bullncow.util.CTextView
+        android:id="@+id/turn_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="15dp"
+        android:text="0"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:typeface="bold" />
+
+    <raj.bullncow.util.CTextView
+        android:id="@+id/turn_left_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="15dp"
+        android:layout_toEndOf="@+id/turn_left"
+        android:layout_toRightOf="@+id/turn_left"
+        android:text="Turn Left"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:typeface="italic" />
+
+    <raj.bullncow.util.CTextView
+        android:id="@+id/give_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="15dp"
+        android:text="Give Up"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:typeface="bold" />
+</RelativeLayout>

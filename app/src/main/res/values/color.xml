@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_color">#f16558</color>
+    <color name="darker">#c05046</color>
+    <color name="dark">#d85a4f</color>
+    <color name="light">#f27468</color>
+
+    <color name="primary_color1">#f05148</color>
+    <color name="darker1">#c04039</color>
+    <color name="dark1">#d84840</color>
+    <color name="light1">#f1625a</color>
+
+
+    <integer-array name="blood">
+        <item>@color/darker</item>
+        <item>@color/dark</item>
+        <item>@color/primary_color</item>
+        <item>@color/light</item>
+    </integer-array>
+
+</resources>

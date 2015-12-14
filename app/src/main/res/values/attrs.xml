@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="fl_theme" format="reference" />
+    <attr name="fl_fontFamily" format="string" />
+    <attr name="fl_fontWeight" format="string" />
+    <attr name="fl_fontExtension" format="string" />
+    <attr name="fl_textAppearance" format="integer">
+        <enum name="none" value="0" />
+        <enum name="dark" value="1" />
+        <enum name="light" value="2" />
+    </attr>
+    <attr name="fl_cornerRadius" format="dimension" />
+    <attr name="fl_borderWidth" format="dimension" />
+    <attr name="fl_size" format="dimension" />
+    <attr name="fl_dotMargin" format="dimension" />
+    <attr name="typeface">
+        <enum name="regular" value="1" />
+        <enum name="bold" value="2" />
+        <enum name="light" value="3" />
+        <enum name="bold_italic" value="4" />
+        <enum name="light_italic" value="5" />
+        <enum name="italic" value="6" />
+        <enum name="dash" value="7" />
+    </attr>
+
+    <declare-styleable name="FloatLabeledEditText">
+        <attr name="fletTextAppearance" format="reference" />
+        <attr name="fletPadding" format="reference|dimension" />
+        <attr name="fletPaddingLeft" format="reference|dimension" />
+        <attr name="fletPaddingTop" format="reference|dimension" />
+        <attr name="fletPaddingRight" format="reference|dimension" />
+        <attr name="fletPaddingBottom" format="reference|dimension" />
+        <attr name="fletBackground" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="fl_FlatButton">
+        <attr name="fl_theme" />
+        <attr name="fl_fontFamily" />
+        <attr name="fl_fontWeight" />
+        <attr name="fl_fontExtension" />
+        <attr name="fl_textAppearance" />
+        <attr name="fl_cornerRadius" />
+        <attr name="typeface" />
+        <!-- Defines the height of the border bottom of the button -->
+        <attr name="fl_blockButtonEffectHeight" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="PxBlurringView">
+        <attr name="blurRadius" format="integer" />
+        <attr name="downsampleFactor" format="integer" />
+        <attr name="overlayColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CTextView">
+        <attr name="typeface" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleLayout">
+        <attr name="innerRadius" format="dimension" />
+        <attr name="sliceDivider" format="reference|color" />
+        <attr name="innerCircle" format="reference|color" />
+        <attr name="angleOffset" format="float" />
+        <attr name="angleRange" format="float" />
+        <attr name="layoutMode">
+            <enum name="normal" value="1" />
+            <enum name="pie" value="2" />
+        </attr>
+        <attr name="dividerWidth" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="fl_FlatEditText">
+        <attr name="fl_theme" />
+        <attr name="fl_fontFamily" />
+        <attr name="fl_fontWeight" />
+        <attr name="fl_fontExtension" />
+        <attr name="fl_textAppearance" />
+        <attr name="fl_cornerRadius" />
+        <attr name="fl_borderWidth" />
+        <attr name="fl_fieldStyle" format="integer">
+            <enum name="flat" value="0" />
+            <enum name="box" value="1" />
+            <enum name="transparent" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="fl_FlatToggleButton">
+        <attr name="fl_theme" />
+        <attr name="fl_cornerRadius" />
+        <attr name="fl_space" format="dimension" />
+    </declare-styleable>
+
+
+</resources>

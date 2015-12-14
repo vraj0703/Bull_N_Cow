@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:expandablepanel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.jorgecastilloprz.expandablepanel.ExpandablePanelView
+        android:id="@+id/expandablePanelView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        expandablepanel:animableViewId="@+id/topLayout"
+        expandablepanel:autoAnimateOnClick="true"
+        expandablepanel:completeExpandAnimationSpeed="150"
+        expandablepanel:completeShrinkAnimationSpeed="200"
+        expandablepanel:completionPercent="0.8">
+
+        <include
+            android:id="@+id/topLayout"
+            layout="@layout/layout_bull_cow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/topLayout"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/game_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </com.jorgecastilloprz.expandablepanel.ExpandablePanelView>
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Bull &amp; Cow</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_finish">FinishActivity</string>
+</resources>

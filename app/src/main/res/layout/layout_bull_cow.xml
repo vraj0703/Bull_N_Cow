@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shadow"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <raj.bullncow.util.CTextView
+            android:id="@+id/guess_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="Click for previous moves"
+            app:typeface="italic" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/bull"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_bull" />
+
+            <raj.bullncow.util.CTextView
+                android:id="@+id/bull_text"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Bull"
+                android:textSize="20sp"
+                app:typeface="bold" />
+
+
+            <raj.bullncow.util.CTextView
+                android:id="@+id/cow_text"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Cow"
+                android:textSize="20sp"
+                app:typeface="bold" />
+
+            <ImageView
+                android:id="@+id/cow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_cow" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/bnc_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1" />
+</RelativeLayout>
