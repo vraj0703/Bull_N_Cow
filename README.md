@@ -20,3 +20,6 @@ User tries to guess the correct answer in fewest turns
 
 Mode 2
 User tries to guess the correct answer in fixed number of turns
+
+Download Game from play store 
+https://play.google.com/store/apps/details?id=raj.bullncow
